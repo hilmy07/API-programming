@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #72c2f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background-color: white;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  width: 400px;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.header {
+  background-color: #f6f6f6;
+  border-bottom: 1px solid #d3d3d3;
+  padding: 20px 40px;
+}
+
+.header h2 {
+  margin: 0;
+}
+
+.form {
+  padding: 30px 40px;
+}
+
+.form-control {
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.form-control label {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.form-control input {
+  font-family: inherit;
+  border: 2px solid #f0f0f0;
+  border-radius: 4px;
+  display: block;
+  padding: 10px;
+  width: 100%;
+}
+
+.form-control i {
+  position: absolute;
+  top: 44px;
+  right: 10px;
+  visibility: hidden;
+}
+
+.form-control small {
+  visibility: hidden;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.form-control.success input {
+  border-color: rgb(55, 194, 147);
+}
+
+.form-control.error input {
+  border-color: rgb(194, 55, 67);
+}
+
+.form-control.success i.fa-check-circle {
+  visibility: visible;
+  color: rgb(55, 194, 147);
+}
+
+.form-control.error i.fa-exclamation-circle {
+  visibility: visible;
+  color: rgb(194, 55, 67);
+}
+
+.form-control.error small {
+  visibility: visible;
+  color: rgb(194, 55, 67);
+}
+
+.form-control p {
+  font-size: small;
+  color: #40b4fc;
+}
+
+.form .button {
+  margin-top: 15px;
+  font-family: inherit;
+  font-weight: bolder;
+  background-color: #72c2f4;
+  border-radius: 4px;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.form .button:hover {
+  background-color: white;
+  border: 1px solid #72c2f4;
+  color: #72c2f4;
+  transition: 1s;
+  border-radius: 8px;
+}
+
+.form .button {
+  cursor: not-allowed;
+}
+
+.option {
+  text-align: center;
+}
+
+.option a {
+  text-decoration: none;
+  color: #72c2f4;
+}
